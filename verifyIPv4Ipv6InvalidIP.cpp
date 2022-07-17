@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <fstream>
 #include <vector>
-#include <set>
+#include <unordered_set>
 using namespace std;
   
 // This function verifies whether the input string is IPv4 or not
@@ -116,14 +116,14 @@ bool verifyIPv6(string s)
 int main()
 {
     string filename("IP.txt");
-	string line;
+    string line;
 	
-	int total_ipv4_count = 0;
+    int total_ipv4_count = 0;
     int total_ipv6_count = 0;
     int invalid_addr_count = 0;
 	
-    set<string> ipv4;
-    set<string> ipv6;
+    unordered_set<string> ipv4;
+    unordered_set<string> ipv6;
 
     ifstream input_file(filename);
     if (!input_file.is_open()) {
