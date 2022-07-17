@@ -14,7 +14,7 @@ bool verifyIPv4(string s)
             cnt++;
     }
   
-    // If cnt != 3 then it is not a valid IPv6 Address
+    // If cnt != 3 then it is not a valid IPv4 Address
     if (cnt != 3)
         return false;
   
